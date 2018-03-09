@@ -154,7 +154,6 @@ GameObject:
   - component: {fileID: 87444636}
   - component: {fileID: 87444640}
   - component: {fileID: 87444643}
-  - component: {fileID: 87444645}
   m_Layer: 0
   m_Name: LegRight
   m_TagString: Untagged
@@ -173,7 +172,6 @@ GameObject:
   - component: {fileID: 87444637}
   - component: {fileID: 87444641}
   - component: {fileID: 87444642}
-  - component: {fileID: 87444644}
   m_Layer: 0
   m_Name: LegLeft
   m_TagString: Untagged
@@ -331,28 +329,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.01, z: 0.075}
   m_Center: {x: 0, y: 0.006, z: 0.022}
---- !u!114 &87444644
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 87444635}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1768156c3888f4eaeb5469435e10dd95, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &87444645
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 87444634}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eafdc804f698745c8a04514c40910f0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &140769968
 GameObject:
   m_ObjectHideFlags: 0
@@ -465,6 +441,7 @@ GameObject:
   - component: {fileID: 333773029}
   - component: {fileID: 333773030}
   - component: {fileID: 333773031}
+  - component: {fileID: 333773032}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -513,6 +490,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.09, y: 0.05, z: 0.07}
   m_Center: {x: -0.045, y: 0, z: 0.02}
+--- !u!114 &333773032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 333773028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ec24eddd0b5e40b0b0d3e30f03d4fc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  legLeft: {fileID: 87444635}
+  legRight: {fileID: 87444634}
 --- !u!1 &569551271
 GameObject:
   m_ObjectHideFlags: 0
@@ -731,7 +721,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1467324481}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 3, z: 1}
+  m_LocalPosition: {x: -0, y: 2, z: 1}
   m_LocalScale: {x: 50, y: 50, z: 50}
   m_Children:
   - {fileID: 333773029}

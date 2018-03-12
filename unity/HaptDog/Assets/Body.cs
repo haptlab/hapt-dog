@@ -12,8 +12,8 @@ public class Body : MonoBehaviour {
 	HingeJoint jointLegRight;
 
 	// 現在のポジション。targetPositionに向けてcurrentPositionを動かしていく
-	float currentPositionLegLeft;
-	float currentPositionLegRight;
+	public float currentPositionLegLeft;
+	public float currentPositionLegRight;
 
 	// 目的のポジション。これを外部からいじる。
 	float targetPositionLegLeft;
@@ -40,7 +40,7 @@ public class Body : MonoBehaviour {
 		float y = Input.GetAxis("Horizontal");
 
 		// 上下左右キーの状態によって目的ポジションを変更
-		setHinge (targetPositionLegLeft + x * 3.0f, targetPositionLegRight + y * 3.0f);
+		//setHinge (targetPositionLegLeft + x * 3.0f, targetPositionLegRight + y * 3.0f);
 
 		if (Input.GetKey (KeyCode.Space)) {
 			resetPoistion ();
